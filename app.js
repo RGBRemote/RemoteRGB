@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 app.use('/rgb', postsRoute)
 
 // Connecting to database
-if(mongoose.connect('mongodb+srv://' + process.env.database_id + ':' + process.env.password + '@apitutorial.iyoptkd.mongodb.net/?retryWrites=true&w=majority&appName=APITutorial')){
+if(mongoose.connect('mongodb+srv://' + process.env.dbId + ':' + process.env.pass + '@remotergb.lbgzdlv.mongodb.net/?retryWrites=true&w=majority&appName=RemoteRGB')){
     console.log("Connected to DB");
     // console.log(PORT)
 }
